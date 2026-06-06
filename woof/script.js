@@ -4,12 +4,12 @@ const main = document.querySelector('main');
 const loadPage = async (v) => {
 	const { p } = v;
 
-	v.res = await fetch(`../woof/${p}/${p}.html`);
+	v.res = await fetch(`woof/${p}/${p}.html`);
 	v.html = await v.res.text();
 	main.innerHTML = v.html;
 	console.log(params, p); ///
 	try {
-		v.m = await import(`../woof/${p}/${p}.js`);
+		v.m = await import(`woof/${p}/${p}.js`);
 		if (v.m.init) v.m.init();
 	} catch (e) {
 		console.log('이 페이지는 별도 JS가 필요 없습니다.');
