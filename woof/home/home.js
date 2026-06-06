@@ -24,5 +24,6 @@ function getParentUserID() {
 		);
 	}
 }
+getParentUserID();
 
 window.addEventListener('load', getParentUserID);
