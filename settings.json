@@ -1,0 +1,17 @@
+{
+  "[html]": {
+    "editor.insertSpaces": false,
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[css]": {
+    "editor.insertSpaces": false,
+    "editor.tabSize": 2
+  },
+  "[javascript]": {
+    "editor.insertSpaces": false,
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  }
+}

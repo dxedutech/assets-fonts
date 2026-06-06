@@ -1,9 +1,3 @@
-/* @font-face {
-	font-family: "PlayTangram";
-	src: url("../../woad/font/PlayTangram.woff2") format("woff2");
-	font-display: swap;
-} */
-
 :root {
 	--rows: 5;
 	--cols: 5;
@@ -21,9 +15,9 @@
 
 	/* THIS would be responsive */
 	/*
-		--gap: max(2px, min(10vw, 1vh));
-		--hexagon-size: max(16px, min(8vw, 8vh));
-		*/
+     --gap: max(2px, min(10vw, 1vh));
+     --hexagon-size: max(16px, min(8vw, 8vh));
+     */
 
 	/* these variables set the domension-relations for the grid "cells" depending on shape. this is esp for regular hexagons */
 	--hFactor: 2;
