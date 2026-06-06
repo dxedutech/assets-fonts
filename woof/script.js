@@ -4,7 +4,7 @@ const main = document.querySelector('main');
 const loadPage = async (v) => {
 	const { p } = v;
 
-	v.res = await fetch(`woof/${p}/${p}.html`);
+	v.res = await fetch(`/woof/${p}/${p}.html`);
 	v.html = await v.res.text();
 	main.innerHTML = v.html;
 	console.log(params, p); ///
