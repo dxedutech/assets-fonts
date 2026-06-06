@@ -3,6 +3,8 @@ export function init() {
 }
 
 function getParentUserID() {
+	console.log('홈 페이지 로직 실행 getParentUserID');
+
 	try {
 		const userElement = window.parent.document.querySelector('#userID');
 
