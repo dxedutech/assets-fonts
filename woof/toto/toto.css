@@ -1,0 +1,13 @@
+
+.fpt { font-family: 'PlayTangram', sans-serif; color: #ffffff; }
+.fbb { font-family: 'baby_bb33', sans-serif; }
+
+.this {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background-color: transparent;
+}
+

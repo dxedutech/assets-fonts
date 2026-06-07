@@ -28,7 +28,18 @@
 
 .this h2 { font-size: 24px; }
 .this h3 { font-size: 20px; }
-.this p { font-size: 16px; user-select: none; margin: 0; }
+.this p { font-size: 18px; user-select: none; margin: 0; }
+.this a { font-size: 18px; }
+
+@media (max-width: 768px) {
+  .this p { font-size: 14px; }
+	.this a { font-size: 14px; }
+}
+
+@media (max-width: 480px) {
+  .this p { font-size: 10px; }
+	.this a { font-size: 10px; }
+}
 
 .grid {
 	position: relative;
@@ -58,20 +69,20 @@ targeting hexagons in even rows - here 2 and 4*/
 }
 
 /* exclude class color3 */
-.hex:not(.hc-tg-orange):not(.none):hover { background-color: var(--hc-tg-yellow); }
+.hex:not(.hc-tg-blue):not(.none):hover { background-color: var(--hc-tg-yellow); }
 
 /* target els by their className */
-.hex.hc-tg-orange { background-color: var(--hc-tg-orange); }
+.hex.hc-tg-blue { background-color: var(--hc-tg-blue); }
 /* Hexagon hover effect for .color3 - includes scaling and box-shadow */
-.hex.hc-tg-orange:hover {
-	background-color: var(--hc-tg-pink);
+.hex.hc-tg-blue:hover {
+	background-color: var(--hc-tg-sky);
 	transform: scale(1.1);
 	z-index: 100;
 	/* box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5); */
 }
 
 /* this does NOT go on the clippath but on the div - to follow cp would need a wrapper! */
-/* .hex.hc-tg-orange:hover { box-shadow: inset 0 0 10px rgba(0, 100, 0, 0.5); } */
+/* .hex.hc-tg-blue:hover { box-shadow: inset 0 0 10px rgba(0, 100, 0, 0.5); } */
 
 /* needs to keep the translate transform and add scale */
 .hex:nth-child(16):hover {
