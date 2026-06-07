@@ -18,10 +18,6 @@
 	--rows: 5;
 	--cols: 5;
 
-	--hc-sky-xv: #3498db;
-	--hc-white-xi: #fff;
-	--hc-orange-xvi: orange;
-	
 	/* --gap: 4px; --hexagon-size: 48px; */
 	--gap: max(2px, min(10vw, 1vh));
 	--hexagon-size: max(16px, min(8vw, 8vh));
@@ -93,7 +89,7 @@ targeting hexagons in even rows - here 2 and 4*/
 }
 
 .hex>div { display: flex; width: 100%; height: 100%; flex-direction: column; justify-content: center; align-items: center;}
-.hex>div img { position: absolute; width: 100%; height: 100%; z-index: 0; }
-.hex>div a {  z-index: 1;}
-.hex>div p { color: #fff; text-align: center; margin: 0; }
+.hex>div img { position: absolute; width: 46%; height: 46%; z-index: 0; }
+.hex>div a { z-index: 1; }
+.hex>div p { color: #fff; text-align: center; margin: 0; z-index: 1; }
 
