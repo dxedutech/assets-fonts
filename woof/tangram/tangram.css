@@ -1,11 +1,6 @@
 
-.fpt { font-family: 'PlayTangram', sans-serif; }
+.fpt { font-family: 'PlayTangram', sans-serif; color: #ffffff; }
 .fbb { font-family: 'baby_bb33', sans-serif; }
-.fsxi { font-size: 12px; }
-.fsxii { font-size: 18px; }
-.fsxiii { font-size: 22px; }
-.fsxiv { font-size: 32px; }
-.fsxv { font-size: 48px; }
 
 .this {
 	display: flex;
@@ -14,24 +9,5 @@
 	height: 100vh;
 	margin: 0;
 	background-color: transparent;
-	flex-direction: column;
-
-	--rows: 5;
-	--cols: 5;
-
-	--hc-sky-xv: #3498db;
-	--hc-white-xi: #fff;
-	--hc-orange-xvi: orange;
-	
-	/* --gap: 4px; --hexagon-size: 48px; */
-	--gap: max(2px, min(10vw, 1vh));
-	--hexagon-size: max(16px, min(8vw, 8vh));
-	
-	--hFactor: 2;
-	--wFactor: 1.732;
-	--yOffset: 1.5;
 }
 
-.this h2 { font-size: 24px; }
-.this h3 { font-size: 20px; }
-.this p { font-size: 16px; user-select: none; margin: 0; }

@@ -26,19 +26,9 @@
 	--yOffset: 1.5;
 }
 
-.this h2 {
-	font-size: 24px;
-}
-
-.this h3 {
-	font-size: 20px;
-}
-
-.this p {
-	font-size: 16px;
-	user-select: none;
-	margin: 0;
-}
+.this h2 { font-size: 24px; }
+.this h3 { font-size: 20px; }
+.this p { font-size: 16px; user-select: none; margin: 0; }
 
 .grid {
 	position: relative;
@@ -48,8 +38,6 @@
 	/* set to 1.5 to get the y-offset */
 	margin: 48px;
 }
-
-
 
 /* Calculate the relation of grid-tiles size for hexagons to have equal x and y gaps */
 .hex {

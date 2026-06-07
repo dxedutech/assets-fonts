@@ -39,4 +39,4 @@ main.addEventListener('click', (e) => {
   }
 });
 
-export const dx = { loadPage };
+export const dx = { loadPage, basePath };
