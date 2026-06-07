@@ -4,3 +4,13 @@
 	font-display: swap;
 }
 
+@font-face {
+	font-family: "baby_bb33";
+	src: url("../woad/font/baby_bb33.woff2") format("woff2");
+	font-display: swap;
+}
+
+body, html {
+  overflow: hidden;
+  height: 100%;
+}

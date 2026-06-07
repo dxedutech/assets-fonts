@@ -1,113 +1,25 @@
-<style>
-	h2 { font-size: 24px; }
-	h3 { font-size: 20px; }
-	p { font-size: 16px; }
-	.fpt { font-family: 'PlayTangram', sans-serif; font-size: 40px; }
-
-	:root {
-	--rows: 5;
-	--cols: 5;
-	/* If changing cols adjust the shifting! */
-	--color1: #3498db;
-	/* Main tiles' color */
-	--color2: #fff;
-	/* Color for tiles in bg color*/
-	--color3: orange;
-	/* color for 3 3 different tiles */
-
-	/* play with different fix settings for gap and size */
-	--gap: 5px;
-	--hexagon-size: 50px;
-
-	/* THIS would be responsive */
-	/*
-		 --gap: max(2px, min(10vw, 1vh));
-		 --hexagon-size: max(16px, min(8vw, 8vh));
-		 */
-
-	/* these variables set the domension-relations for the grid "cells" depending on shape. this is esp for regular hexagons */
-	--hFactor: 2;
-	--wFactor: 1.732;
-	--yOffset: 1.5;
-}
-
-/* THIS NEEDS TO BE ADJUSTED WHEN CHANGING cols OR rows!!!
-targeting hexagons in even rows - here 2 and 4*/
-/* n + (numberOfRow) * (numberOfCols) +1) => -n + (numberOfRow) * 2* (numberOfCols) */
-.grid>.hex:nth-child(n + 6):nth-child(-n + 10),
-.hex:nth-child(n + 16):nth-child(-n + 20) {
-	transform: translateX(calc(50% + var(--gap) / 2));
-}
-
-body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	margin: 0;
-	background-color: transparent;
-}
-
-.grid {
-	display: grid;
-	grid-template-columns: repeat(var(--cols), calc(var(--hexagon-size) * var(--wFactor) + var(--gap)));
-	grid-template-rows: repeat(var(--rows), calc(var(--hexagon-size) * var(--yOffset) + var(--gap)));
-	/* set to 1.5 to get the y-offset */
-	position: relative;
-}
-
-/* Calculate the relation of grid-tiles size for hexagons to have equal x and y gaps */
-.hex {
-	width: calc(var(--hexagon-size) * var(--wFactor));
-	height: calc(var(--hexagon-size) * var(--hFactor));
-	background-color: var(--color1);
-	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-	margin: 0;
-	display: block;
-	transition: background-color 0.3s ease;
-}
-
-/* exclude class color3 */
-.hex:not(.color3):hover { background-color: #2ecc71; }
-
-/* target els by their className */
-.hex.color3 { background-color: var(--color3); }
-
-/* Hexagon hover effect for .color3 - includes scaling and box-shadow */
-.hex.color3:hover {
-	transform: scale(1.5);
-	z-index: 100;
-	box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
-}
-
-/* this does NOT go on the clippath but on the div - to follow cp would need a wrapper! */
-.hex.color3:hover { box-shadow: inset 0 0 10px rgba(0, 100, 0, 0.5); }
-
-/* needs to keep the translate transform and add scale */
-.hex:nth-child(16):hover { transform: translateX(calc(50% + var(--gap) / 2)) scale(1.5); }
-
-/*target els as nth-child - the bg-color-hexagons*/
-.hex:nth-child(2),
-:nth-child(6),
-:nth-child(7),
-:nth-child(11),
-:nth-child(12),
-:nth-child(19) {
-	background-color: var(--color2);
-}
-</style>
-
-<section>
-	<h2>HOME</h2>
+<link rel="stylesheet" href="../woof/home/home.css">
+<section class="this">
 	<article>
-		<h3>웹 개발</h3>
-		<p>반응형 웹사이트, 웹앱, UI/UX 설계 등 다양한 웹 개발 서비스를 제공합니다.</p>
 		<div class="grid">
 			<!-- Dynamically create hexagons - I'd actually do in JS to make it flexible and accessible to change items in grid[cols][rows]-->
 
-			<div class="hex color3"></div>
+			<div class="hex hc-orange-xvi">
+				<div>
+					<img src="image.jpg" alt="ico" width="100%" height="100%">
+					<a href="?page=home">Home</a>
+					<p>HOME</p>
+				</div>
+			</div>
 
 			<div class="hex"></div>
+			<div class="hex">
+				<div>
+					<img src="image.jpg" alt="ico" width="100%" height="100%">
+					<a href="?page=tangram">Tangram</a>
+					<p>TANGRAM</p>
+				</div>
+			</div>
 			<div class="hex"></div>
 			<div class="hex"></div>
 			<div class="hex"></div>
@@ -120,22 +32,16 @@ body {
 			<div class="hex"></div>
 			<div class="hex"></div>
 			<div class="hex"></div>
-			<div class="hex"></div>
-			<div class="hex color3"></div>
-			<div class="hex"></div>
+			<div class="hex hc-orange-xvi"></div>
 			<div class="hex"></div>
 			<div class="hex"></div>
 			<div class="hex"></div>
 			<div class="hex"></div>
 			<div class="hex"></div>
-			<div class="hex color3"></div>
+			<div class="hex"></div>
+			<div class="hex hc-orange-xvi"></div>
 			<div class="hex"></div>
 			<div class="hex"></div>
 		</div>
-		<div class="fpt">ODDONG</div>
-	</article>
-	<article>
-		<h3>모바일 앱 개발</h3>
-		<p>iOS 및 Android 앱 개발, 하이브리드 앱 솔루션 등을 지원합니다.</p>
 	</article>
 </section>
