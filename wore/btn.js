@@ -1,4 +1,4 @@
-import { dx } from '../../wore/hex.js';
+import { dx } from './hex.js';
 
 export default (v => {
   const { x, b } = v;
