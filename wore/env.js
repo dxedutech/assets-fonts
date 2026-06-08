@@ -14,7 +14,7 @@ export default (r => {
     r.wh.w = w || 1280;
     r.wh.h = h || 1280;
     r.isPortrait = window.matchMedia("(orientation: portrait)").matches ? 'portrait' : 'landscape';
-		console.log('####################################');
+
     const resizebodyu = () => {
       v.d = document.querySelector('main');
 
