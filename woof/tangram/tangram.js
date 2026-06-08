@@ -699,7 +699,7 @@ const cardu = (v) => {
 		// await x.loadfontu('/www/with/fonts/baby_bb33.woff');
 		// await x.loadfontu('/www/with/fonts/PlayTangram.woff');
 
-		await x.importmoduleu({ m: '../../../wore/env.js' }); /// module, index
+		await x.importmoduleu({ m: `${dx.basePath}/wore/env.js` }); /// module, index
 		x.envm.resizeu({ w: w.wh.w, h: w.wh.h });
 
 		// await x.loadFetch({ u: '/www/work/tangram/tangram.xml', p: '.sheet.bgs' });
@@ -932,7 +932,7 @@ const cardu = (v) => {
 		document.addEventListener('mouseup', drag.endu);
 		document.addEventListener('touchend', drag.endu);
 
-		await x.importmoduleu({ m: '../../../wore/btn.js' }); /// module, index
+		await x.importmoduleu({ m: `${dx.basePath}/wore/btn.js` }); /// module, index
 
 		v.e = document.querySelector('.sheet.fgs .so.tangram .tans.xi');
 		v.e.style.display = 'none';

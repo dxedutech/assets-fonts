@@ -11,8 +11,8 @@ export default (r => {
   const resizeu = v => {
     const { w, h } = v;
 
-    r.wh.w = w || 800;
-    r.wh.h = h || 800;
+    r.wh.w = w || 1280;
+    r.wh.h = h || 1280;
     r.isPortrait = window.matchMedia("(orientation: portrait)").matches ? 'portrait' : 'landscape';
 		console.log('####################################');
     const resizebodyu = () => {
