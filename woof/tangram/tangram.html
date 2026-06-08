@@ -1,4 +1,173 @@
 <link rel="stylesheet" href="woof/tangram/tangram.css">
 <section class="this">
-	<article><nav><a href="?page=home">Home</a></nav></article>
+	<div class="scene">
+		<div class="sheet bgs"></div>
+		<div class="sheet fgs">
+			<div class="so tangram">
+				<svg width="1280" height="1280" xmlns="http://www.w3.org/2000/svg" version="1.1">
+					<g class="tans xi">
+						<path class="tan xi" d="M0,0 L128,0 L256,0 L128,128 Z" fill="#ee743f" />
+						<path class="tan xii" d="M0,256 L128,128 L0,0 L0,128 Z" fill="#e62d8b" />
+						<path class="tan xiii" d="M128,256 L64,192 L0,256 L64,256 Z" fill="#2d91b7" />
+						<path class="tan xiv" d="M192,192 L128,128 L64,192 L128,256 Z" fill="#45537b" />
+						<path class="tan xv" d="M256,256 L256,128 L192,192 L128,256 Z" fill="#e71223" />
+						<path class="tan xvi" d="M256,0 L192,64 L192,192 L256,128 Z" fill="#e9d226" />
+						<path class="tan xvii" d="M128,128 L192,192 L192,128 L192,64 Z" fill="#7caa2a" />
+					</g>
+					<g class="tans xii">
+						<path class="tan xxi" d="M0,0 L128,0 L256,0 L128,128 Z" fill="#ee743f" />
+						<path class="tan xxii" d="M0,256 L128,128 L0,0 L0,128 Z" fill="#e62d8b" />
+						<path class="tan xxiii" d="M128,256 L64,192 L0,256 L64,256 Z" fill="#2d91b7" />
+						<path class="tan xxiv" d="M192,192 L128,128 L64,192 L128,256 Z" fill="#45537b" />
+						<path class="tan xxv" d="M256,256 L256,128 L192,192 L128,256 Z" fill="#e71223" />
+						<path class="tan xxvi" d="M256,0 L192,64 L192,192 L256,128 Z" fill="#e9d226" />
+						<path class="tan xxvii" d="M128,128 L192,192 L192,128 L192,64 Z" fill="#7caa2a" />
+					</g>
+					<g class="tans txt"></g>
+				</svg>
+			</div>
+			<div class="so txtctrls">
+				<div>
+					<div class="btns">
+						<div>
+							<button class="btn add" js="'obj': 'txtctrl', 'fn': 'addu'"></button>
+							<button class="btn remove" js="'obj': 'txtctrl', 'fn': 'removeu'"></button>
+							<button class="btn edit" js="'obj': 'txtctrl', 'fn': 'editu'"></button>
+						</div>
+						<div>
+							<button class="btn fixtxt" js="'obj': 'txtctrl', 'fn': 'fixtxtu'"></button>
+							<button class="btn fixtxt" js="'obj': 'txtctrl', 'fn': 'fixtxtu'"></button>
+							<button class="btn fixtxt" js="'obj': 'txtctrl', 'fn': 'fixtxtu'"></button>
+							<button class="btn fixtxt" js="'obj': 'txtctrl', 'fn': 'fixtxtu'"></button>
+							<button class="btn fixtxt" js="'obj': 'txtctrl', 'fn': 'fixtxtu'"></button>
+							<button class="btn fixtxt" js="'obj': 'txtctrl', 'fn': 'fixtxtu'"></button>
+							<button class="btn fixtxt" js="'obj': 'txtctrl', 'fn': 'fixtxtu'"></button>
+						</div>
+					</div>
+					<div class="txt">
+						<label for="txtcontent">Text:</label>
+						<input type="text" id="txtcontent" value="" placeholder="Please enter your text.">
+					</div>
+					<div class="xys">
+						<div>
+							<label for="txtx">X:</label>
+							<input type="number" id="txtx" value="512" min="0" max="1920">
+						</div>
+						<div>
+							<label for="txty">Y:</label>
+							<input type="number" id="txty" value="256" min="0" max="1920">
+						</div>
+						<div>
+							<label for="txtsize">Size:</label>
+							<input type="number" id="txtsize" value="64" min="32" max="256">
+						</div>
+					</div>
+					<div class="font">
+						<label for="txtname">Font:</label>
+						<select id="txtname">
+							<option value="PlayTangram">PlayTangram</option>
+							<option value="baby_bb33">baby_bb33(eng)</option>
+							<option value="Black Han Sans">Black Han Sans</option>
+							<option value="Gowun Dodum">Gowun Dodum</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="so skiaorama"></div>
+		</div>
+		<div class="sheet uis">
+			<div class="so gride">
+				<svg width="1280" height="1280" xmlns="http://www.w3.org/2000/svg" version="1.1">
+					<g stroke="#dae" stroke-width="1" stroke-dasharray="8 120">
+						<path d="M0,128 L1280,128 Z" />
+						<path d="M0,256 L1280,256 Z" />
+						<path d="M0,384 L1280,384 Z" />
+						<path d="M0,512 L1280,512 Z" />
+						<path d="M0,640 L1280,640 Z" />
+						<path d="M0,768 L1280,768 Z" />
+						<path d="M0,896 L1280,896 Z" />
+						<path d="M0,1024 L1280,1024 Z" />
+						<path d="M0,1152 L1280,1152 Z" />
+						<path d="M128,0 L128,1280 Z" />
+						<path d="M256,0 L256,1280 Z" />
+						<path d="M384,0 L384,1280 Z" />
+						<path d="M512,0 L512,1280 Z" />
+						<path d="M640,0 L640,1280 Z" />
+						<path d="M768,0 L768,1280 Z" />
+						<path d="M896,0 L896,1280 Z" />
+						<path d="M1024,0 L1024,1280 Z" />
+						<path d="M1152,0 L1152,1280 Z" />
+					</g>
+				</svg>
+			</div>
+			<div class="so btns">
+				<button class="btn text" js="'obj': 'btnstangram', 'fn': 'textu'"><span>TEXT</span></button> <!-- Text -->
+				<button class="btn color on" js="'obj': 'btnstangram', 'fn': 'coloru'"><span>COLOR</span></button>
+				<!-- Color -->
+				<button class="btn pluse" js="'obj': 'btnstangram', 'fn': 'pluseu'"><span>PLUSE 1 SET</span></button>
+				<!-- Pluse -->
+				<button class="btn reset" js="'obj': 'btnstangram', 'fn': 'resetu'"><span>RESET</span></button> <!-- Reset -->
+				<button class="btn magnetic" js="'obj': 'btnstangram', 'fn': 'magneticu'"><span>MAGNETIC</span></button>
+				<!-- Magnetic -->
+				<button class="btn grid on" js="'obj': 'btnstangram', 'fn': 'gridu'"><span>GRID</span></button> <!-- Grid -->
+				<button class="btn printdownload" js="'obj': 'btnstangram', 'fn': 'printdownloadu'"><span>PRINT
+						&</br>DOWNLOAD</span></button> <!-- Save -->
+				<button class="btn help" js="'url': ''"><span>HELP</span></button> <!-- help -->
+				<button class="btn home" js="'url': ''"><span>HOME</span></button> <!-- home -->
+			</div>
+			<div class="so cards">
+				<div class="thumbs">
+					<ul>
+						<li class="on">
+							<div class="sec">½</div>
+							<div class="thumb">THUMB</div>
+						</li>
+						<li>
+							<div class="sec">½</div>
+							<div class="thumb">THUMB</div>
+						</li>
+						<li>
+							<div class="sec">½</div>
+							<div class="thumb">THUMB</div>
+						</li>
+						<li>
+							<div class="sec">½</div>
+							<div class="thumb">THUMB</div>
+						</li>
+						<li>
+							<div class="sec">½</div>
+							<div class="thumb">THUMB</div>
+						</li>
+					</ul>
+				</div>
+				<div class="btns">
+					<button class="btn moveprev" js="'obj': 'btnscard', 'fn': 'moveprevu'"><span>MOVE PREV</span></button>
+					<button class="btn movenext" js="'obj': 'btnscard', 'fn': 'movenextu'"><span>MOVE NEXT</span></button>
+					<button class="btn addprev" js="'obj': 'btnscard', 'fn': 'addprevu'"><span>ADD PREV</span></button>
+					<button class="btn addnext" js="'obj': 'btnscard', 'fn': 'addnextu'"><span>ADD NEXT</span></button>
+					<button class="btn remove" js="'obj': 'btnscard', 'fn': 'removeu'"><span>REMOVE</span></button>
+					<button class="btn draw" js="'obj': 'btnscard', 'fn': 'drawu'"><span>DRAW &</br>DURATION</span></button>
+					<button class="btn laydown" js="'obj': 'btnscard', 'fn': 'laydownu'"><span>LAY DOWN</span></button>
+					<button class="btn playonce" js="'obj': 'btnscard', 'fn': 'playonceu'"><span>PLAY</span></button>
+					<button class="btn playstop" js="'obj': 'btnscard', 'fn': 'playstopu'"><span>STOP</span></button>
+					<button class="btn playloop" js="'obj': 'btnscard', 'fn': 'playloopu'"><span>LOOP</span></button>
+					<button class="btn import" js="'obj': 'btnscard', 'fn': 'importu'"><span>IMPORT</span></button>
+					<button class="btn export" js="'obj': 'btnscard', 'fn': 'exportu'"><span>EXPORT</span></button>
+				</div>
+				<textarea rows="1" maxlength="24" placeholder="A-Za-z0-9-_#@."
+					oninput="this.value = /[^A-Za-z0-9-_#@.]/ig.test(this.value) ? '' : this.value;"></textarea>
+				<input class="fileimport" type="file" style="display:none" accept=".xml">
+			</div>
+			<div class="so modal">
+				<div class="msgs"></div>
+				<div class="btns">
+					<button class="btn print" js="'obj': 'btnstangram', 'fn': 'printu'"><span>PRINT</span></button>
+					<button class="btn download" js="'obj': 'btnstangram', 'fn': 'downloadu'"><span>DOWNLOAD</span></button>
+					<textarea rows="1" maxlength="24" placeholder="A-Za-z0-9-_#@."
+						oninput="this.value = /[^A-Za-z0-9-_#@.]/ig.test(this.value) ? '' : this.value;"></textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <article><nav><a href="?page=home">Home</a></nav></article> -->
 </section>

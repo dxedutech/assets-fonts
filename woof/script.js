@@ -1,3 +1,5 @@
 import { dx } from '../wore/hex.js';
 
-dx.loadPage({ p: 'home' });
+const params = new URLSearchParams(window.location.search);
+const page = params.get('page') || 'home';
+dx.loadPage({ p: page });
