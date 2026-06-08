@@ -1,3 +1,5 @@
+import { dx } from '../../wore/hex.js';
+
 export default (v => {
   const { x, b } = v;
 
@@ -35,4 +37,4 @@ export default (v => {
   v.devu = devu;
 
   return v;
-})({ x: hex, b: document.querySelectorAll('.btn') });
+})({ x: dx.hex, b: document.querySelectorAll('.btn') });

@@ -12,7 +12,9 @@
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
+
 	margin: 0;
+	padding: 0;
 	background-color: transparent;
 }
 
@@ -20,7 +22,7 @@
 
 
 
-/* html,
+html,
 body {
 	display: flex;
 	width: 100%;
@@ -31,15 +33,9 @@ body {
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
-} */
+}
 
-/* body>div,
-.scene,
-.sheet {
-	width: var(--w);
-	height: var(--h);
-} */
-
+article { width: 100%; height: 100%; }
 
 /* iframe body {
   @font-face { font-family: "PlayTangram"; src: url("../with/fonts/PlayTangram.woff"); }
@@ -60,10 +56,7 @@ body {
   }
 }   */
 
-
-.so {
-	position: absolute;
-}
+.so { position: absolute; }
 
 
 /* <.sheet.fgs ////////////////////////////////////////////////// */
@@ -133,19 +126,19 @@ body {
 }
 
 .sheet.fgs .so.txtctrls .btns .add {
-	background: no-repeat 0 0 / 100% url(../../with/ico/ico-create.svg);
+	background: no-repeat 0 0 / 100% url( rsc/svg/ico-create.svg);
 }
 
 .sheet.fgs .so.txtctrls .btns .remove {
-	background: no-repeat 0 0 / 100% url(../../with/ico/ico-remove.svg);
+	background: no-repeat 0 0 / 100% url(rsc/svg/ico-remove.svg);
 }
 
 .sheet.fgs .so.txtctrls .btns .edit {
-	background: no-repeat 0 0 / 100% url(../../with/ico/ico-edit.svg);
+	background: no-repeat 0 0 / 100% url(rsc/svg/ico-edit.svg);
 }
 
 .sheet.fgs .so.txtctrls .btns .fixtxt {
-	background: no-repeat 0 0 / 100% url(../../with/ico/ico-remove.svg);
+	background: no-repeat 0 0 / 100% url(rsc/svg/ico-remove.svg);
 }
 
 .sheet.fgs .so.txtctrls .btns>div:nth-child(2) .fixtxt {
@@ -253,39 +246,39 @@ body {
 }
 
 .sheet.uis .so.btns .btn.text {
-	background: no-repeat 0 0 / 100% url(../../with/ico/ico-addtxt.svg);
+	background: no-repeat 0 0 / 100% url(rsc/svg/ico-addtxt.svg);
 }
 
 .sheet.uis .so.btns .btn.color {
-	background: no-repeat 0 0 / 100% url(../../with/ico/ico-tancolor.svg);
+	background: no-repeat 0 0 / 100% url(rsc/svg/ico-tancolor.svg);
 }
 
 .sheet.uis .so.btns .btn.pluse {
-	background: no-repeat 0 0 / 100% url(../../with/ico/ico-tanpluse.svg);
+	background: no-repeat 0 0 / 100% url(rsc/svg/ico-tanpluse.svg);
 }
 
 .sheet.uis .so.btns .btn.reset {
-	background: no-repeat 0 0 / 100% url(../../with/ico/ico-tanreset.svg);
+	background: no-repeat 0 0 / 100% url(rsc/svg/ico-tanreset.svg);
 }
 
 .sheet.uis .so.btns .btn.magnetic {
-	background: no-repeat 0 0 / 100% url(../../with/ico/ico-tanmagnetic.svg);
+	background: no-repeat 0 0 / 100% url(rsc/svg/ico-tanmagnetic.svg);
 }
 
 .sheet.uis .so.btns .btn.grid {
-	background: no-repeat 0 0 / 100% url(../../with/ico/ico-tangrid.svg);
+	background: no-repeat 0 0 / 100% url(rsc/svg/ico-tangrid.svg);
 }
 
 .sheet.uis .so.btns .btn.printdownload {
-	background: no-repeat 0 0 / 100% url(../../with/ico/ico-tansave.svg);
+	background: no-repeat 0 0 / 100% url(rsc/svg/ico-tansave.svg);
 }
 
 .sheet.uis .so.btns .btn.help {
-	background: no-repeat 0 0 / 100% url(../../with/ico/ico-tanhelp.svg);
+	background: no-repeat 0 0 / 100% url(rsc/svg/ico-tanhelp.svg);
 }
 
 .sheet.uis .so.btns .btn.home {
-	background: no-repeat 0 0 / 100% url(../../with/ico/ico-tanhome.svg);
+	background: no-repeat 0 0 / 100% url(rsc/svg/ico-tanhome.svg);
 }
 
 .sheet.uis .so.btns .btn:hover {
@@ -453,51 +446,51 @@ body {
 }
 
 .sheet.uis .so.cards .btns .btn.moveprev {
-	background: no-repeat 0 0 / 100% url(../../with/ico/ico-moveprev.svg);
+	background: no-repeat 0 0 / 100% url(rsc/svg/ico-moveprev.svg);
 }
 
 .sheet.uis .so.cards .btns .btn.movenext {
-	background: no-repeat 0 0 / 100% url(../../with/ico/ico-movenext.svg);
+	background: no-repeat 0 0 / 100% url(rsc/svg/ico-movenext.svg);
 }
 
 .sheet.uis .so.cards .btns .btn.addprev {
-	background: no-repeat 0 0 / 100% url(../../with/ico/ico-addprev.svg);
+	background: no-repeat 0 0 / 100% url(rsc/svg/ico-addprev.svg);
 }
 
 .sheet.uis .so.cards .btns .btn.addnext {
-	background: no-repeat 0 0 / 100% url(../../with/ico/ico-addnext.svg);
+	background: no-repeat 0 0 / 100% url(rsc/svg/ico-addnext.svg);
 }
 
 .sheet.uis .so.cards .btns .btn.remove {
-	background: no-repeat 0 0 / 100% url(../../with/ico/ico-remove.svg);
+	background: no-repeat 0 0 / 100% url(rsc/svg/ico-remove.svg);
 }
 
 .sheet.uis .so.cards .btns .btn.draw {
-	background: no-repeat 0 0 / 100% url(../../with/ico/ico-draw.svg);
+	background: no-repeat 0 0 / 100% url(rsc/svg/ico-draw.svg);
 }
 
 .sheet.uis .so.cards .btns .btn.laydown {
-	background: no-repeat 0 0 / 100% url(../../with/ico/ico-laydown.svg);
+	background: no-repeat 0 0 / 100% url(rsc/svg/ico-laydown.svg);
 }
 
 .sheet.uis .so.cards .btns .btn.playonce {
-	background: no-repeat 0 0 / 100% url(../../with/ico/ico-playonce.svg);
+	background: no-repeat 0 0 / 100% url(rsc/svg/ico-playonce.svg);
 }
 
 .sheet.uis .so.cards .btns .btn.playstop {
-	background: no-repeat 0 0 / 100% url(../../with/ico/ico-playstop.svg);
+	background: no-repeat 0 0 / 100% url(rsc/svg/ico-playstop.svg);
 }
 
 .sheet.uis .so.cards .btns .btn.playloop {
-	background: no-repeat 0 0 / 100% url(../../with/ico/ico-playloop.svg);
+	background: no-repeat 0 0 / 100% url(rsc/svg/ico-playloop.svg);
 }
 
 .sheet.uis .so.cards .btns .btn.import {
-	background: no-repeat 0 0 / 100% url(../../with/ico/ico-import.svg);
+	background: no-repeat 0 0 / 100% url(rsc/svg/ico-import.svg);
 }
 
 .sheet.uis .so.cards .btns .btn.export {
-	background: no-repeat 0 0 / 100% url(../../with/ico/ico-export.svg);
+	background: no-repeat 0 0 / 100% url(rsc/svg/ico-export.svg);
 }
 
 .sheet.uis .so.cards .btns .btn:hover {
